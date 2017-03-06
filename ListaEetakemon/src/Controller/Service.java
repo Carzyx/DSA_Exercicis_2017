@@ -1,6 +1,7 @@
 package Controller;
 
 import Model.Eetakemon;
+import Model.IEetakemon;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,17 +10,17 @@ import java.util.Random;
 /**
  * Created by histo on 21/02/2017.
  */
-public class Service {
+public class Service implements IEetakemon {
     private List<Eetakemon> listEetakemon = new ArrayList<Eetakemon>();
     private static int id = 1;
 
     public Service(){};
 
-    public void addElement(Eetakemon e)
+    public void addElement(Eetakemon eetakemon)
     {
-        e.level = calculateLevel();
-        e.id = calculateId();
-        listEetakemon.add(e);
+        eetakemon.level = calculateLevel();
+        eetakemon.id = calculateId();
+        listEetakemon.add(eetakemon);
     }
 
     public boolean deleteElementById(int id)
@@ -35,9 +36,10 @@ public class Service {
 
     public Eetakemon findElementById(int id)
     {
-        for(Eetakemon e: listEetakemon)
+
+        for(Eetakemon eetakemon: listEetakemon)
         {
-            if(e.id == id) return e;
+            if(eetakemon != null && eetakemon.id == id) return eetakemon;
         }
         return null;
     }
