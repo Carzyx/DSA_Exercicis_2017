@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b09f00a-05cc-4b8f-a069-04b4c18b598d" name="Default" comment="Add jUnit Test">
+    <list default="true" id="2b09f00a-05cc-4b8f-a069-04b4c18b598d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ListaEetakemon/Controller/Service.class" afterPath="$PROJECT_DIR$/out/production/ListaEetakemon/Controller/Service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ListaEetakemon/Model/Eetakemon.class" afterPath="$PROJECT_DIR$/out/production/ListaEetakemon/Model/Eetakemon.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ListaEetakemon/View/UserInterface.class" afterPath="$PROJECT_DIR$/out/production/ListaEetakemon/View/UserInterface.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ListaEetakemon.iml" afterPath="$PROJECT_DIR$/ListaEetakemon.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/Service.java" afterPath="$PROJECT_DIR$/src/Controller/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Eetakemon.java" afterPath="$PROJECT_DIR$/src/Model/Eetakemon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/IEetakemon.java" afterPath="$PROJECT_DIR$/src/Model/IEetakemon.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Test/ServiceTest.java" afterPath="$PROJECT_DIR$/src/Test/ServiceTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/UserInterface.java" afterPath="$PROJECT_DIR$/src/View/UserInterface.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +36,8 @@
       <file leaf-file-name="Service.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/Service.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+            <state relative-caret-position="51">
+              <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#293#304#0" expanded="true" />
@@ -820,7 +817,7 @@
       <workItem from="1488706364177" duration="940000" />
       <workItem from="1488707583487" duration="24000" />
       <workItem from="1488826308448" duration="2511000" />
-      <workItem from="1488913858565" duration="3624000" />
+      <workItem from="1488913858565" duration="3646000" />
     </task>
     <task id="LOCAL-00001" summary="First exercici of DSA.&#10;Commit final version.&#10;It's a simple Application Consola in Java, that contains an aproximated 'CRUD' : Create, Read, Delete, Show using controls expecionts.&#10;">
       <created>1488312671142</created>
@@ -850,7 +847,14 @@
       <option name="project" value="LOCAL" />
       <updated>1488840771300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add jUnit Test">
+      <created>1488917494052</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1488917494052</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -886,7 +890,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28842000" />
+    <option name="totallyTimeSpent" value="28864000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1326,8 +1330,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/Service.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="30" column="7" lean-forward="true" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="51">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#293#304#0" expanded="true" />
