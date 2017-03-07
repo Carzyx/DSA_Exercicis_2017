@@ -1,6 +1,6 @@
 package View;
 
-import Controller.Service;
+import Controller.ServiceEetakemon;
 import Model.Eetakemon;
 import java.util.List;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Created by Miguel Angel Archilla on 21/02/2017.
  */
 public class UserInterface {
-    private static Service service = new Service();
+    private static ServiceEetakemon serviceEetakemon = new ServiceEetakemon();
     private static Eetakemon eetakemon = new Eetakemon();
 
     public static void main(String [ ] args){
@@ -39,13 +39,13 @@ public class UserInterface {
                         System.out.println("Name: ");
                         eetakemon = new Eetakemon(sc.next());
 
-                        service.addElement(eetakemon);
+                        serviceEetakemon.addElement(eetakemon);
                         break;
 
                     case 2:
                         System.out.println("Id: ");
 
-                        boolean result = service.deleteElementById(sc.nextInt());
+                        boolean result = serviceEetakemon.deleteElementById(sc.nextInt());
                         if (!result)
                             System.out.println("Eetakemon not found...");
                         else
@@ -55,12 +55,12 @@ public class UserInterface {
 
                     case 3:
                         System.out.println("Id: ");
-                        eetakemon = service.findElementById(sc.nextInt());
+                        eetakemon = serviceEetakemon.findElementById(sc.nextInt());
                         printEetakemon(eetakemon);
                         break;
 
                     case 4:
-                        List<Eetakemon> listEetakemon = service.getAllElements();
+                        List<Eetakemon> listEetakemon = serviceEetakemon.getAllElements();
                         if (listEetakemon.size() != 0) {
                             System.out.println("Eetakemon Registered:");
                             for (Eetakemon item : listEetakemon) {

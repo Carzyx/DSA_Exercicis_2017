@@ -1,7 +1,6 @@
 package Controller;
 
 import Model.Eetakemon;
-import Model.IEetakemon;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,11 +9,11 @@ import java.util.Random;
 /**
  * Created by histo on 21/02/2017.
  */
-public class Service implements IEetakemon {
+public class ServiceEetakemon implements  IServiceEetakemon{
     private List<Eetakemon> listEetakemon = new ArrayList<Eetakemon>();
     private static int id = 1;
 
-    public Service(){};
+    public ServiceEetakemon(){};
 
     public boolean addElement(Eetakemon eetakemon)
     {
