@@ -37,8 +37,7 @@ public class UserInterface {
 
                     case 1:
                         System.out.println("Name: ");
-                        eetakemon = new Eetakemon();
-                        eetakemon.name = sc.next();
+                        eetakemon = new Eetakemon(sc.next());
 
                         service.addElement(eetakemon);
                         break;

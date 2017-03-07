@@ -9,4 +9,8 @@ public class Eetakemon {
     public int level;
 
     public Eetakemon(){};
+    public Eetakemon(String name)
+    {
+        this.name = name;
+    }
 }

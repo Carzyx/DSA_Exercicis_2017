@@ -16,11 +16,11 @@ public class Service implements IEetakemon {
 
     public Service(){};
 
-    public void addElement(Eetakemon eetakemon)
+    public boolean addElement(Eetakemon eetakemon)
     {
         eetakemon.level = calculateLevel();
         eetakemon.id = calculateId();
-        listEetakemon.add(eetakemon);
+        return listEetakemon.add(eetakemon);
     }
 
     public boolean deleteElementById(int id)
