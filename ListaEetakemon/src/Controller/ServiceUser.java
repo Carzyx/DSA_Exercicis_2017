@@ -11,34 +11,27 @@ public class ServiceUser {
 
     private Hashtable<Integer,User> userRegistered = new Hashtable<Integer, User>();
 
-    public boolean createUser(String name, String surname, String username, String password, String email)
+    public boolean createUser(String name, String surname, String username, String password, String email, int dni)
     {
         User user = new User(name, surname, username, password, email);
-        User response = userRegistered.put(0,user);
+        User response = userRegistered.put(dni,user);
         return response != null;
     }
 
-    boolean deleteUser(String username, String password)
+    boolean deleteUser(int dni, String password)
     {
-        for( Integer i=0; i< userRegistered.size(); i++)
+        User user = userRegistered.get(dni);
+        if(user.password.contentEquals(password))
         {
-            User user = userRegistered.get(i);
-            if(user.username.contentEquals(username) && user.password.contentEquals(password))
-            {
-                 userRegistered.remove(i);
-                 return true;
-            }
+            userRegistered.remove(dni);
+            return true;
         }
         return false;
     }
 
-    public User findUserById(int id)
+    public User findUserById(int dni)
     {
-        for( Integer i=0; i< userRegistered.size(); i++)
-        {
-            if(userRegistered.get(i).id == id) return userRegistered.get(i);
-        }
-        return null;
+        return userRegistered.get(dni);
 
     }
 

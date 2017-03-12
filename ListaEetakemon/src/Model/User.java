@@ -4,7 +4,6 @@ package Model;
  * Created by histo on 06/03/2017.
  */
 public class User {
-    public  int id;
     public String name;
     public String surname;
     public String username;
@@ -13,7 +12,6 @@ public class User {
 
     public User(String name, String surname, String username, String password, String email)
     {
-        this.id = id;
         this.name = name;
         this.surname  = surname;
         this.username = username;
