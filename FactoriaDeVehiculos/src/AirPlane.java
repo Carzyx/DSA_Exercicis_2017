@@ -11,7 +11,7 @@ public class AirPlane implements IVehicleFactory {
 
     @Override
     public void printMessage() {
-        System.out.println("Welcome to Car Factory");
+        System.out.println("Welcome to AirPlane Factory");
     }
 
     @Override
